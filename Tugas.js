@@ -109,23 +109,21 @@ const App = () => {
       }
       )
     }
-{/* 
-    {
-      // absen kurang dari 3
-      // filter
-      // map
-      students.filter (itemFilter => {
-        return item.id < 3
-      }) 
-      .map (itemFilter => {
-        return (
-          <p>{item}</p>
-        )
-      })
-    
-    } */}
-  </>
-  )
-}
 
-export default App
+    {
+        //TUGAS 13 FILTER DAN MAP NAMA
+        students.filter (itemFilter => {
+          return itemFilter.id < 3
+        }) 
+        .map (itemFilter => {
+          return (
+            <p>"{itemFilter.name}"</p>
+          )
+        })
+      
+      }
+    </>
+    )
+  }
+  
+  export default App
